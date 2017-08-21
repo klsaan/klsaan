@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Нёрдс. Магазин</title>
   </head>
   <body>
     <header class="page-header">
       <nav class="page-navigation">
-        <a class="page-logo"><img src="http://placehold.it/150x100" width="100" height="20" alt="Дизайн-студия Nerds"></a>
+        <a class="page-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Дизайн-студия Nerds"></a>
         <ul class="site-navigation">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
@@ -35,9 +36,9 @@
             Сетка:
           </legend>
           <ul class="grid">
-            <li class="filter-option"><input type="radio" name="grid" value="adaptive" class="visually-hidden filter-input-radio">Адаптивная</li>
-            <li class="filter-option"><input type="radio" name="grid" value="fixed" class="visually-hidden filter-input-radio">Фиксированная</li>
-            <li class="filter-option">Резиновая</li>
+            <li class="filter-option"><label><input type="radio" name="grid" value="adaptive" class="visually-hidden filter-input-radio">Адаптивная</label></li>
+            <li class="filter-option"><label><input type="radio" name="grid" value="fixed" class="visually-hidden filter-input-radio">Фиксированная</label></li>
+            <li class="filter-option"><label><input type="radio" name="grid" value="rubber" class="visually-hidden filter-input-radio">Резиновая</label></li>
           </ul>
         </fieldset>
         <fieldset>
@@ -45,107 +46,92 @@
             Особенности:
           </legend>
           <ul class="features">
-            <li class="filter-option"><input type="checkbox" name="slider" class="visually-hidden filter-input-checkbox">Слайдер</li>
-            <li class="filter-option"><input type="checkbox" name="advantages-block" class="visually-hidden filter-input-checkbox">Блок преимуществ</li>
-            <li class="filter-option"><input type="checkbox" name="news" class="visually-hidden filter-input-checkbox">Новости</li>
-            <li class="filter-option"><input type="checkbox" name="gallery" class="visually-hidden filter-input-checkbox">Галерея</li>
-            <li class="filter-option"><input type="checkbox" name="basket" class="visually-hidden filter-input-checkbox">Корзина</li>
+            <li class="filter-option"><label><input type="checkbox" name="slider" class="visually-hidden filter-input-checkbox">Слайдер</label></li>
+            <li class="filter-option"><label><input type="checkbox" name="advantages-block" class="visually-hidden filter-input-checkbox">Блок преимуществ</label></li>
+            <li class="filter-option"><label><input type="checkbox" name="news" class="visually-hidden filter-input-checkbox">Новости</label></li>
+            <li class="filter-option"><label><input type="checkbox" name="gallery" class="visually-hidden filter-input-checkbox">Галерея</label></li>
+            <li class="filter-option"><label><input type="checkbox" name="basket" class="visually-hidden filter-input-checkbox">Корзина</label></li>
           </ul>
         </fieldset>
-        <input class="filter-button" type="submit" value="Показать">
+        <button class="filter-button" type="submit">Показать</button>
       </form>
       <div class="sorting">
         <h2 class="visually-hidden">Сортировка товаров</h2>
         <span>Сортировать:</span>
-        <a class="sorting-option" href="#">По цене</a>
-        <a class="sorting-option" href="#">По типу</a>
-        <a class="sorting-option" href="#">По названию</a>
-        <a class="sorting-option" href="#">Сверху вниз</a>
-        <a class="sorting-option" href="#">Снизу вверх</a>
+        <ul>
+          <li><a class="sorting-option" href="#">По цене</a></li>
+          <li><a class="sorting-option" href="#">По типу</a></li>
+          <li><a class="sorting-option" href="#">По названию</a></li>
+          <li><a class="sorting-option-triangle" href="#">Сверху вниз</a></li>
+          <li><a class="sorting-option-triangle" href="#">Снизу вверх</a></li>
+        </ul>
+
       </div>
       <section class="product-cards">
         <h2 class="visually-hidden">Готовые шаблоны</h2>
         <ul class="product-cards-list">
           <li class="product-cards-item">
-            <div class="product-cards-border">
-              <img src="http://placehold.it/150x100" width="200" height="20" alt="border">
-            </div>
             <section class="product-cards-inner">
               <h3 class="visually-hidden">Готовый шаблон "Sedona"</h3>
-              <img src="http://placehold.it/150x100" width="200" height="350" alt="Готовый шаблон Sedona">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Готовый шаблон Sedona">
             </section>
             <section class="product-cards-hover">
-              <h3 class="product-cards-hover-title">Sedona</h3>
+              <h3 class="product-cards-hover-title"><a href="#">Sedona</a></h3>
               <p class="product-cards-hover-text">Информационный сайт для туристов</p>
               <a class="product-cards-hover-btn" href="#">9 900 руб.</a>
             </section>
           </li>
           <li class="product-cards-item">
-            <div class="product-cards-border">
-              <img src="http://placehold.it/150x100" width="200" height="20" alt="border">
-            </div>
             <section class="product-cards-inner">
               <h3 class="visually-hidden">Готовый шаблон "Pink"</h3>
-              <img src="http://placehold.it/150x100" width="200" height="350" alt="Готовый шаблон Pink">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Готовый шаблон Pink">
             </section>
             <section class="product-cards-hover">
-              <h3 class="product-cards-hover-title">Pink</h3>
+              <h3 class="product-cards-hover-title"><a href="#">Pink</a></h3>
               <p class="product-cards-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
               <a class="product-cards-hover-btn" href="#">9 900 руб.</a>
             </section>
           </li>
           <li class="product-cards-item">
-            <div class="product-cards-border">
-              <img src="http://placehold.it/150x100" width="200" height="20" alt="border">
-            </div>
             <section class="product-cards-inner">
               <h3 class="visually-hidden">Готовый шаблон "Барбершоп Borodinski"</h3>
-              <img src="http://placehold.it/150x100" width="200" height="350" alt="Готовый шаблон Barbershop">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон Barbershop">
             </section>
             <section class="product-cards-hover">
-              <h3 class="product-cards-hover-title">Barbershop</h3>
+              <h3 class="product-cards-hover-title"><a href="#">Barbershop</a></h3>
               <p class="product-cards-hover-text">Сайт салона красоты. Для мужчин, да.</p>
               <a class="product-cards-hover-btn" href="#">9 900 руб.</a>
             </section>
           </li>
           <li class="product-cards-item">
-            <div class="product-cards-border">
-              <img src="http://placehold.it/150x100" width="200" height="20" alt="border">
-            </div>
             <section class="product-cards-inner">
               <h3 class="visually-hidden">Готовый шаблон "Mishka"</h3>
-              <img src="http://placehold.it/150x100" width="200" height="350" alt="Готовый шаблон Mishka">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон Mishka">
             </section>
             <section class="product-cards-hover">
-              <h3 class="product-cards-hover-title">Mishka</h3>
+              <h3 class="product-cards-hover-title"><a href="#">Mishka</a></h3>
               <p class="product-cards-hover-text">Интернет-магазин вязаных игрушек</p>
               <a class="product-cards-hover-btn" href="#">9 900 руб.</a>
             </section>
           </li>
           <li class="product-cards-item">
-            <div class="product-cards-border">
-              <img src="http://placehold.it/150x100" width="200" height="20" alt="border">
-            </div>
             <section class="product-cards-inner">
               <h3 class="visually-hidden">Готовый шаблон "A plus"</h3>
-              <img src="http://placehold.it/150x100" width="200" height="350" alt="Готовый шаблон A plus">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон A plus">
             </section>
             <section class="product-cards-hover">
-              <h3 class="product-cards-hover-title">A plus</h3>
+              <h3 class="product-cards-hover-title"><a href="#">A plus</a></h3>
               <p class="product-cards-hover-text">Лендинг курсов повышения квалификации</p>
               <a class="product-cards-hover-btn" href="#">9 900 руб.</a>
             </section>
           </li>
           <li class="product-cards-item">
-            <div class="product-cards-border">
-              <img src="http://placehold.it/150x100" width="200" height="20" alt="border">
-            </div>
             <section class="product-cards-inner">
               <h3 class="visually-hidden">Готовый шаблон "Кваст"</h3>
-              <img src="http://placehold.it/150x100" width="200" height="350" alt="Готовый шаблон Кваст">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон Кваст">
             </section>
             <section class="product-cards-hover">
-              <h3 class="product-cards-hover-title">Кваст</h3>
+              <h3 class="product-cards-hover-title"><a href="#">Кваст</a></h3>
               <p class="product-cards-hover-text">Промо-сайт производителя крафтового кваса</p>
               <a class="product-cards-hover-btn" href="#">9 900 руб.</a>
             </section>
@@ -154,7 +140,7 @@
       </section>
       <div class="page-buttons">
         <a class="page-buttons-previous" href="#">Предыдущая</a>
-        <a class="page-buttons-number" href="#">1</a>
+        <a class="page-buttons-number page-buttons-number-current">1</a>
         <a class="page-buttons-number" href="#">2</a>
         <a class="page-buttons-number" href="#">3</a>
         <a class="page-buttons-next" href="#">Следующая</a>
@@ -164,7 +150,7 @@
       <footer class="page-footer">
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <img class="contacts-map" src="http://placehold.it/150x100" width="400" height="150" alt="Карта">
+          <img class="contacts-map" src="img/map.png" width="1440" height="416" alt="Карта">
           <section class="contacts-text">
             <b>Nerds design studio</b>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
