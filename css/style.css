@@ -3,5 +3,44 @@ body {
   line-height: 24px;
   color: #283136;
   font-weight: normal;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto","Myriad Pro", sans-serif;
+
+  background-color: #ffffff;
+
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: #eeeeee;
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-navigation {
+  list-style: none;
+  color: #000000;
+}
+
+.site-navigation a:hover:not(.site-nav-current),
+.site-navigation a:focus:not(.site-nav-current) {
+  color: #fb565a;
+}
+
+.site-navigation a:active:not(.site-nav-current) {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.site-nav-current {
+  border-bottom: 2px solid #fb565a;
 }
