@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс. Магазин</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -60,7 +61,7 @@
             <li class="filter-option"><label><input type="checkbox" name="basket" class="visually-hidden filter-input-checkbox">Корзина</label></li>
           </ul>
         </fieldset>
-        <button class="filter-button" type="submit">Показать</button>
+        <button class="button filter-button" type="submit">Показать</button>
       </form>
       <div class="sorting">
         <h2 class="visually-hidden">Сортировка товаров</h2>
@@ -69,8 +70,8 @@
           <li><a class="sorting-option" href="#">По цене</a></li>
           <li><a class="sorting-option" href="#">По типу</a></li>
           <li><a class="sorting-option" href="#">По названию</a></li>
-          <li><a class="sorting-option-triangle" href="#">Сверху вниз</a></li>
-          <li><a class="sorting-option-triangle" href="#">Снизу вверх</a></li>
+          <li><a class="sorting-option-triangle" href="#"><span class="visually-hidden">Сверху вниз</span></a></li>
+          <li><a class="sorting-option-triangle" href="#"><span class="visually-hidden">Снизу вверх</span></a></li>
         </ul>
 
       </div>
@@ -154,28 +155,44 @@
       </ul>
     </main>
 
-      <footer class="page-footer">
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <img class="contacts-map" src="img/map.png" width="1440" height="416" alt="Карта">
-          <section class="contacts-text">
-            <b>Nerds design studio</b>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            тел.: +7 (812) 275-75-75</p>
-            <a class="contacts-button button" href="#">Напишите нам</a>
-          </section>
+    <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <img class="contacts-map" src="img/map.png" width="1440" height="416" alt="Карта">
+        <section class="contacts-text">
+          <b>Nerds design studio</b>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>            тел.: +7 (812) 275-75-75</p>
+          <a class="contacts-button button" href="#">Напишите нам</a>
         </section>
-        <section class="social">
-          <ul>
-            <li class="social-button vk"><a href="#">Вконтакте</a></li>
-            <li class="social-button fb"><a href="#">Фейсбук</a></li>
-            <li class="social-button ig"><a href="#">Инстаграм</a></li>
-          </ul>
-          <div class="discount">
-            <b class="discount-title">Давайте дружить, это выгодно!</b>
-            <p class="discount-text">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
-        </section>
-      </footer>
+      </section>
+      <section class="social">
+        <ul>
+          <li class="social-button vk"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="social-button fb"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-button ig"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+        </ul>
+        <div class="discount">
+          <b class="discount-title">Давайте дружить, это выгодно!</b>
+          <p class="discount-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+
+    <section class="modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <b>Напишите нам</b>
+      <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
+        <p>
+          <label for="text">Текст письма:</label>
+          <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="modal-feedback-button button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-feedback-close"><span class="visually-hidden">Закрыть</span></button>
+    </section>
   </body>
   </html>

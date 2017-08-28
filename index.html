@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -43,7 +44,11 @@
           <p class="slider-text text">Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="slider-button button" href="#">Узнать больше</a>
         </div>
-        <div class="slider-controls"></div>
+        <ul class="slider-controls">
+          <li><button class="slider-control"></button></li>
+          <li><button class="slider-control"></button></li>
+          <li><button class="slider-control"></button></li>
+        </ul>
       </section>
       <section class="main-services">
         <h2 class="visually-hidden">Услуги</h2>
@@ -102,10 +107,10 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
-          <li class="HTMLAcademy"><a href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy<img src="img/logo-1.png" width="199" height="68" alt="HTMLAcademy"></a></li>
-          <li class="Barbershop-Borodinskiy"><a href="#">Borodinskiy<img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></a></li>
-          <li class="Pink"><a href="#">Pink<img src="img/logo-3.png" width="185" height="52" alt="pink"></a></li>
-          <li class="Mishka"><a href="#">Mishka<img src="img/logo-4.png" width="173" height="84" alt="mishka"></a></li>
+          <li class="HTMLAcademy"><a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTMLAcademy</span><img src="img/logo-1.png" width="199" height="68" alt="HTMLAcademy"></a></li>
+          <li class="Barbershop-Borodinskiy"><a href="#"><span class="visually-hidden">Borodinskiy</span><img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></a></li>
+          <li class="Pink"><a href="#"><span class="visually-hidden">Pink</span><img src="img/logo-3.png" width="185" height="52" alt="pink"></a></li>
+          <li class="Mishka"><a href="#"><span class="visually-hidden">Mishka</span><img src="img/logo-4.png" width="173" height="84" alt="mishka"></a></li>
         </ul>
       </section>
     </main>
@@ -122,9 +127,9 @@
       </section>
       <section class="social">
         <ul>
-          <li class="social-button vk"><a href="#">Вконтакте</a></li>
-          <li class="social-button fb"><a href="#">Фейсбук</a></li>
-          <li class="social-button ig"><a href="#">Инстаграм</a></li>
+          <li class="social-button vk"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="social-button fb"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-button ig"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <div class="discount">
           <b class="discount-title">Давайте дружить, это выгодно!</b>
@@ -146,7 +151,7 @@
         </p>
         <button class="modal-feedback-button button" type="submit">Отправить</button>
       </form>
-      <span class="modal-feedback-close">Закрыть</span>
+      <button class="modal-feedback-close"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </body>
 </html>
