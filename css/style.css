@@ -13,7 +13,7 @@ body {
 
 .page-header {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 30px;
   background-color: #eeeeee;
 }
@@ -26,10 +26,6 @@ a {
 .site-navigation {
   list-style: none;
   color: #000000;
-}
-
-.site-navigation a {
-  font-weight: 500;
 }
 
 .site-navigation a:hover:not(.site-nav-current),
