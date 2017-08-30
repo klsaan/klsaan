@@ -52,13 +52,20 @@ a {
   font-weight: 500;
 }
 
+.slider-controls {
+  list-style: none;
+}
+
  .button {
-   background-color: #fb565a;
-   padding: ;
+   font-family: "Roboto", "Arial", sans-serif; /* Задал шрифт, т.к. кнопка отправки в форме обратной связи не пожелала унаследовать его из body */
+   font-size: 16px;
    line-height: 18px;
    color: #ffffff;
    font-weight: 500;
    text-transform: uppercase;
+
+   background-color: #fb565a;
+   border: none;
  }
 
  .button:hover,
@@ -97,3 +104,254 @@ a {
  .yellow-button:active {
    background-color: #e5a722;
  }
+
+ .gray-button {
+   background-color: #eee;
+   color: #000;
+ }
+
+ .gray-button:hover,
+ .gray-button:focus {
+   background-color: #dfdfdf;
+   cursor: pointer;
+ }
+
+ .gray-button:active {
+   background-color: #d5d5d5;
+   color: rgba(0, 0, 0, 0.3);
+ }
+
+.main-services-list {
+  list-style: none;
+}
+
+.service-title {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-b-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-percent-list {
+  list-style: none;
+}
+
+.advantages-list-b {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages-percent-list b {
+  font-size: 45px;
+  line-height: 10.06px;
+  color: #000;
+}
+
+.advantages-percent-list span {
+  vertical-align: 14px;
+  font-size: 27px;
+}
+
+.advantages-percent-list p {
+  line-height: 18px;
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.contacts-text b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.contacts-text p {
+  line-height: 18px;
+  color: #666;
+}
+
+.social ul {
+  list-style: none;
+}
+
+.discount b {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000;
+  font-weight: 700;
+}
+
+.discount p {
+  line-height: 22px;
+  color: #444;
+}
+
+.catalog-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000;
+}
+
+.background-title {
+  background-color: #eee;
+}
+
+.choise-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-cost {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-input {
+  line-height: 20px;
+}
+
+.filter-radio:hover,
+.filter-radio:focus{
+  color: #000;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-option {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.sorting-option:hover,
+.sorting-option:focus {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.sorting-option:active {
+  color: #000;
+}
+
+.sorting-down::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border: 10px solid #ededed;
+  border-right-width: 5.5px;
+  border-left-width: 5.5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom: 0;
+  vertical-align: middle;
+}
+
+.sorting-up::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border: 10px solid #ededed;
+  border-right-width: 5.5px;
+  border-left-width: 5.5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top: 0;
+  vertical-align: middle;
+}
+
+.sorting-down:hover::before,
+.sorting-down:focus::before {
+  border-top-color: #a6a6a6;
+}
+
+.sorting-down:active::before {
+  border-top-color: #231f20;
+}
+.sorting-up:hover::before,
+.sorting-up:focus::before {
+  border-bottom-color: #a6a6a6;
+}
+
+.sorting-up:active::before {
+  border-bottom-color: #231f20;
+}
+
+.product-cards-list {
+  list-style: none;
+}
+
+.product-cards-hover-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product-cards-hover-text {
+  line-height: 18px;
+  color: #666;
+}
+
+.page-buttons {
+  list-style: none;
+}
+
+.page-buttons-number-current,
+.page-buttons-number-current:hover,
+.page-buttons-number-current:focus,
+.page-buttons-number-current:active {
+  background-color: #fff;
+  border: 3px solid #dbdbdb;
+  box-shadow: none;
+  color: #000;
+  cursor: default;
+}
+
+.modal-feedback b {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000;
+  font-weight: 500;
+}
+
+.modal-feedback-form {
+  line-height: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.modal-feedback-input {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.5)
+}
