@@ -11,6 +11,19 @@ body {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   text-transform: uppercase;
   font-weight: 500;
@@ -21,6 +34,15 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+.page-logo:hover,
+.page-logo:focus {
+  opacity: 0.8;
+}
+
+.page-logo:active {
+  opacity: 0.3;
 }
 
 .site-navigation {
@@ -39,6 +61,7 @@ a {
 
 .site-nav-current {
   border-bottom: 2px solid #fb565a;
+  cursor: default;
 }
 
 .slider {
@@ -128,6 +151,7 @@ a {
 .service-title {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
@@ -156,6 +180,7 @@ a {
 .advantages-percent-list b {
   font-size: 45px;
   line-height: 10.06px;
+  font-weight: 700;
   color: #000;
 }
 
@@ -170,6 +195,19 @@ a {
 
 .partners-list {
   list-style: none;
+}
+
+.partners-list a {
+  opacity: 0.2;
+}
+
+.partners-list a:hover,
+.partners-list a:focus {
+  opacity: 1;
+}
+
+.partners-list a:active {
+  opacity: 0.1;
 }
 
 .contacts-text b {
@@ -307,6 +345,12 @@ a {
   list-style: none;
 }
 
+.product-cards-hover {
+  background-color: #eee;
+  display: inline-block;
+  text-align: center;
+}
+
 .product-cards-hover-title {
   font-size: 18px;
   line-height: 30px;
@@ -322,6 +366,10 @@ a {
 
 .page-buttons {
   list-style: none;
+}
+
+.page-buttons-previous {
+  display: none;
 }
 
 .page-buttons-number-current,
@@ -353,5 +401,30 @@ a {
   line-height: 18px;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(68, 68, 68, 0.5)
+  color: rgba(68, 68, 68, 0.5);
+  width: 346px;
+  border: 2px solid #d7dcde;
+  border-radius: 4px;
+  padding: 16px 0 16px 14px;
+}
+
+.modal-feedback-text {
+  overflow: auto;
+  resize: none;
+  width: 746px;
+  height: 86px;
+}
+
+.modal-feedback-input:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-feedback-input:focus {
+  border-color: #000;
+  color: rgb(68, 68, 68);
+}
+
+.feedback-input-not-valid {
+  border-color: #e74246;
+  color: #e74246;
 }
