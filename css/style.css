@@ -11,6 +11,15 @@ body {
   padding: 0;
 }
 
+html {
+box-sizing: border-box;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+
 .visually-hidden {
   position: absolute;
 
@@ -66,6 +75,8 @@ a {
 
 .slider {
   background-color: #eeeeee;
+  height: 433px;
+  margin-bottom: 80px;
 }
 
 .slider-b {
@@ -271,8 +282,8 @@ a {
   line-height: 20px;
 }
 
-.filter-radio:hover,
-.filter-radio:focus{
+.filter-option:hover,
+.filter-option:focus{
   color: #000;
 }
 
@@ -401,18 +412,20 @@ a {
   line-height: 18px;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(68, 68, 68, 0.5);
-  width: 346px;
+  color: rgb(68, 68, 68);
+  width: 360px;
   border: 2px solid #d7dcde;
   border-radius: 4px;
   padding: 16px 0 16px 14px;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 .modal-feedback-text {
   overflow: auto;
   resize: none;
-  width: 746px;
-  height: 86px;
+  width: 760px;
+  height: 118px;
 }
 
 .modal-feedback-input:hover {
@@ -421,10 +434,241 @@ a {
 
 .modal-feedback-input:focus {
   border-color: #000;
-  color: rgb(68, 68, 68);
 }
 
 .feedback-input-not-valid {
   border-color: #e74246;
   color: #e74246;
+}
+
+/*СЛАЙДЕРСТВО
+.
+.
+.
+.
+*/
+.slider-inner {
+  outline: 2px solid red;
+
+  display: inline-block;
+  width: 1200px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.slider-picture {
+  float: right;
+}
+
+.slider-inner:first-of-type .slider-picture {
+  margin-right: 65px;
+}
+
+.slider-container {
+  width: 3608px;
+  padding: 0;
+
+}
+
+.slider-current {
+  outline: 2px solid green;
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0 0 20px;
+  }
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin-left: 17px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #c1c1c1;
+  box-shadow:
+    0 0 0 5px #fff,
+    0 0 0 2px #fff inset ;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label:first-of-type {
+  margin-left: 0;
+}
+
+.slider-controls {
+  position: absolute;
+  outline: 2px solid green;
+  left: 600px;
+  top: 440px;
+}
+
+/* СЕТКОВСТВО
+.
+.
+.
+.
+.
+ */
+
+.page-header {
+  width: 100%;
+}
+
+.page-navigation {
+  display: flex;
+  outline: 2px solid red;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-logo-main, .site-navigation {
+  outline: 2px solid green;
+}
+
+.page-logo-main, .catalog-logo {
+  margin-top: 49px;
+}
+
+.site-navigation:last-of-type {
+  padding: 0;
+  margin-left: auto;
+}
+
+.site-navigation:first-of-type {
+  display: flex;
+  padding: 0;
+  margin-left: 200px;
+  width: 440px;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  margin-top: 78px;
+}
+
+.main-services-list {
+  outline: 2px solid blue;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+  margin-bottom: 40px
+}
+
+.main-services-list li {
+  margin-right: 100px;
+}
+
+.advantages-container {
+  outline: 2px solid red;
+  display: flex;
+  width: 1200px;
+  height: 486px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.advantages-about-us {
+  width: 660px;
+}
+
+.advantages-percent {
+  outline: 2px solid blue;
+
+  margin-left: auto;
+}
+
+.advantages-percent-list {
+  outline: 2px solid green;
+  display: flex;
+  width: 350px;
+  padding: 0;
+}
+
+.advantages-percent-list li {
+  margin-right: 25px;
+}
+
+.partners-list {
+  outline: 2px solid red;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 45px 20px 45px 20px;
+  justify-content: space-around;
+}
+
+.contacts-container {
+  outline: 2px solid red;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.contacts-text {
+  outline: 2px solid green;
+  position: absolute;
+  width: 319px;
+  height: 308px;
+  padding: 52px 0 0 50px;
+  top: 54px;
+
+  background-color: #fff;
+}
+
+.contacts-text-container {
+  outline: 2px solid blue;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.social {
+  outline: 2px solid red;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.social ul {
+  outline: 2px solid green;
+  display: flex;
+  width: 260px;
+  justify-content: space-around;
+}
+
+.social-button {
+  border: 4px solid black;
+}
+
+.discount {
+  outline: 2px solid blue;
+
+  margin-left: 140px;
+}
+
+.modal-feedback {
+  outline: 2px solid red;
+  width: 960px;
+  height: 590px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  padding-top: 70px;
+  padding-left: 100px;
+}
+
+.modal-feedback-form div {
+  display: inline-block;
+  margin-right: 40px;
 }
