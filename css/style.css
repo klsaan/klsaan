@@ -152,7 +152,7 @@ a {
 
 .advantages-about-us {
   padding: 0;
-  padding-top: 40px;
+  padding-top: 34px;
 }
 
 .advantages-b-title {
@@ -162,11 +162,11 @@ a {
   color: #000000;
 
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .advantages-text {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .advantages-list {
@@ -186,13 +186,13 @@ a {
 }
 
 .advantages-about-us .advantages-list-b {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .advantages-list {
   padding: 0;
   margin: 0;
-  min-height: 122px;
+  min-height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -215,12 +215,12 @@ a {
 
 .advantages-percent-picture {
   line-height: 0;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .advantages-percent .advantages-list-b {
   margin-left: 16px;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 }
 
 .advantages-percent-list b {
@@ -230,7 +230,7 @@ a {
   color: #000;
 
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
 }
 
 .advantages-percent-list span {
@@ -265,6 +265,9 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #000;
+
+  display: block;
+  margin-bottom: 24px;
 }
 
 .contacts-text p {
@@ -309,6 +312,9 @@ a {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .filter ul {
@@ -319,7 +325,7 @@ a {
   background-color: #eee;
   border-radius: 4px;
   padding: 39px 20px;
-  margin-top: 50px;
+  margin-top: 33px;
   margin-bottom: 14px;
 }
 
@@ -412,18 +418,26 @@ a {
 }
 
 .filter-type:nth-of-type(2) {
-  margin-bottom: 50px;
+  margin-bottom: 27px;
+}
+
+.filter-type:nth-child(3) .choise-title {
+  margin-bottom: 14px;
+}
+
+.filter-type:nth-child(4) .choise-title {
+  margin-bottom: 14px;
 }
 
 .filter-type:nth-of-type(3) {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .filter-cost-box {
   width: 260px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 54px;
 }
 
 .filter-option {
@@ -433,7 +447,7 @@ a {
 
 .filter-checkbox {
   min-height: 23px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .filter-radio {
@@ -514,10 +528,6 @@ a {
   list-style: none;
 }
 
-.product-cards-item {
-  position: relative;
-}
-
 .product-cards-hover {
   background-color: #eee;
   position: absolute;
@@ -525,9 +535,10 @@ a {
   left: 0;
   text-align: center;
   width: 360px;
-  min-height: 231px;
-  display: none;
+  padding: 0;
   padding-bottom: 43px;
+  padding-top: 9px;
+  display: block;
 }
 
 .product-cards-inner {
@@ -537,6 +548,17 @@ a {
 .product-cards-item {
   border-top: 40px solid #e9e9e9;
   border-radius: 4px;
+  position: relative;
+}
+
+.product-cards-item::before {
+  content: "";
+  position: absolute;
+  top: -27px;
+  left: 16px;
+  width: 60px;
+  height: 14px;
+  background-image: url("../img/card-decor.svg");
 }
 
 .product-cards-item:hover,
@@ -555,11 +577,13 @@ a {
   color: #000;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 
 .product-cards-hover-text {
   line-height: 18px;
   color: #666;
+  margin-bottom: 29px;
 }
 
 .page-buttons {
@@ -587,6 +611,7 @@ a {
   line-height: 18px;
   font-weight: 700;
   color: #000;
+  margin-top: 41px;
 }
 
 .modal-feedback-input {
@@ -598,7 +623,9 @@ a {
   width: 360px;
   border: 2px solid #d7dcde;
   border-radius: 4px;
-  padding: 16px 0 16px 14px;
+  padding: 14px 0 14px 14px;
+  margin-top: 9px;
+  margin-bottom: 18px;
   box-sizing: border-box;
   outline: 0;
 }
@@ -642,7 +669,7 @@ a {
   font-weight: 500;
 
   display: block;
-  margin-top: 80px;
+  margin-top: 78px;
 }
 
 .slider-text p {
@@ -663,29 +690,40 @@ a {
   margin: 0px;
 }
 
+.slider-pictures {
+  position: relative;
+}
+
 .slider-picture {
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 0;
 }
 
-.slider-inner:first-of-type .slider-picture {
-  margin-right: 72px;
-  margin-top: 18px;
+.slider-picture:nth-of-type(1) {
+  right: 51px;
 }
 
-.slider-inner:last-of-type .slider-picture {
-  margin-top: 18px;
+.slider-picture:nth-of-type(2) {
+  display: none;
+}
+
+.slider-picture:nth-of-type(3) {
+  display: none;
 }
 
 .slider-container {
   width: 3608px;
   padding: 0;
+  display: flex;
 }
 
 .slider-current {
   position: relative;
-  overflow: hidden;
+  overflo: hidden;
   padding-left: 20px;
-  height: 430px;
+  height: 431px;
 }
 
 .slider input[type="radio"] {
@@ -706,6 +744,16 @@ a {
   cursor: pointer;
 }
 
+.slider-controls label:nth-child(2) {
+  box-shadow: none;
+  border: 9px solid #fff;
+}
+
+.slider-controls label:nth-child(3) {
+  box-shadow: none;
+  border: 9px solid #fff;
+}
+
 .slider-controls label:first-of-type {
   margin-left: 0;
 }
@@ -715,10 +763,11 @@ a {
   display: flex;
   justify-content: space-between;
   outline: 2px solid green;
-  min-width: 90px;
+  min-width: 88px;
   left: 50%;
   transform: translateX(-50%);
-  top: 320px;
+  top: 317px;
+  z-index: 1;
 }
 
 /* СЕТКОВСТВО
@@ -752,7 +801,9 @@ a {
 }
 
 .page-logo-main, .catalog-logo {
+
   margin-top: 50px;
+  line-height: 0;
 }
 
 .site-navigation {
@@ -760,7 +811,7 @@ a {
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  margin-top: 78px;
+  margin-top: 76px;
 }
 
 .site-navigation:last-of-type {
@@ -774,6 +825,12 @@ a {
   justify-content: space-between;
   width: 440px;
   margin-left: 200px;
+}
+
+.site-navigation a {
+  display: inline-block;
+  height: 35px;
+
 }
 
 .main-services-list {
@@ -792,17 +849,17 @@ a {
 }
 
 .service-picture {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .service-title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .service-text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .advantages-container {
@@ -829,13 +886,13 @@ a {
 }
 
 .advantages-percent-list li {
-  margin-right: 25px;
+  margin-right: 22px;
 }
 
 .partners-list {
   display: flex;
   margin-bottom: 80px;
-  padding: 45px 0;
+  padding: 43px 0;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -844,6 +901,7 @@ a {
 }
 
 .partners-list div {
+    outline: 2px solid green;
   width: 260px;
   display: flex;
   justify-content: space-around;
@@ -856,21 +914,35 @@ a {
   background-color: #e9e5dc;
   padding: 0;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .contacts-map {
   text-align: center;
   font-size: 0;
   line-height: 0;
+  position: relative;
+}
+
+.contacts-map::before {
+  content: "";
+  width: 200px;
+  height: 195px;
+  position: absolute;
+  top: 89px;
+  right: 243px;
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
 }
 
 .contacts-text {
   position: absolute;
   width: 319px;
   height: 308px;
-  padding: 52px 0 0 50px;
-  top: 54px;
+  padding: 49px 0 0 50px;
+  top: 53px;
 
   background-color: #fff;
 }
@@ -898,8 +970,8 @@ a {
   position: relative;
   display: block;
   line-height: 0;
-  width: 80px;
-  height: 80px;
+  width: 78px;
+  height: 78px;
   background-color: #e1e1e1;
   border-radius: 50%;
 }
@@ -933,7 +1005,7 @@ a {
   display: block;
   margin: 0;
   margin-top: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .discount p {
@@ -943,6 +1015,7 @@ a {
 .modal-feedback {
   outline: 2px solid red;
   display: none;
+  z-index: 10;
 
   width: 960px;
   height: 590px;
@@ -950,12 +1023,12 @@ a {
   position: fixed;
   left: 50%;
   top: 50%;
-  margin-left: -480px;
-  margin-top: -295px;
+  transform: translateX(-50%) translateY(-50%);
   overflow: auto;
 
-  padding-top: 70px;
+  padding-top: 67px;
   padding-left: 100px;
+  padding-bottom: 83px;
 
   background-color: #fff;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
@@ -963,7 +1036,26 @@ a {
 
 .modal-feedback-form div {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 37px;
+}
+
+.modal-feedback-button {
+  font-family: inherit;
+  padding: 16px 84px;
+  margin-top: 10px;
+}
+
+.modal-feedback-close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 80px;
+  right: 90px;
+  border: none;
+  background-color: #fff;
+  background-image: url("../img/close-cross.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .title-container {
@@ -972,9 +1064,9 @@ a {
   flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 70px;
-  padding-bottom: 115px;
-  margin-bottom: 60px;
+  padding-top: 78px;
+  padding-bottom: 108px;
+  margin-bottom: 45px;
 }
 
 .filter {
@@ -982,6 +1074,7 @@ a {
   flex-direction: column;
   align-items: left;
   width: 260px;
+  padding-top: 10px;
 }
 
 .sorting {
@@ -991,14 +1084,32 @@ a {
   align-items: baseline;
   justify-content: space-between;
   width: 760px;
-  margin-bottom: 60px;
+  margin-bottom: 51px;
+  margin-top: 7px;
 }
 
-.sorting ul {
+.sorting-list {
+  outline: 2px solid red;
 
-  outline: 2px solid green;
   display: flex;
   width: 360px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sorting .sorting-text {
+  outline: 2px solid green;
+  display: flex;
+  width: 272px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.sorting-triangle {
+  outline: 2px solid green;
+  display: flex;
+  width: 41px;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -1008,7 +1119,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0px 20px 0 20px;
 }
 
 .flex-element {
@@ -1043,7 +1154,7 @@ a {
 .page-buttons-previous,
 .page-buttons-number,
 .page-buttons-next {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 /* Декоративные элементы
@@ -1081,14 +1192,16 @@ a {
 
 .contacts-button {
   padding: 16px 45px;
+  margin-top: 22px;
 }
 
 .filter-button {
-  padding: 16px 88px;
+  padding: 16px 89px;
 }
 
 .product-hover-btn {
   padding: 16px 60px;
+  margin: 0px;
 }
 
 .page-buttons-previous,
@@ -1155,3 +1268,7 @@ a {
   background-color: #eee;
 }
 product-cards-hover
+product-hover-btn
+filter-cost-box
+filter-type
+modal-feedback-button
