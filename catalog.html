@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс. Магазин</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +39,6 @@
         </div>
 
         <div class="flex-box container">
-
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <fieldset class="filter-type">
@@ -146,7 +145,6 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
 
                 <section class="product-cards">
@@ -159,8 +157,7 @@
                             </section>
                             <section class="product-cards-hover">
                                 <h3 class="product-cards-hover-title"><a href="#">Sedona</a></h3>
-                                <p class="product-cards-hover-text">Информационный сайт
-                                    <br> для туристов</p>
+                                <p class="product-cards-hover-text">Информационный сайт <span class="br">для туристов</span></p>
                                 <a class="product-hover-btn button" href="#">9 900 руб.</a>
                             </section>
                         </li>
@@ -171,8 +168,7 @@
                             </section>
                             <section class="product-cards-hover">
                                 <h3 class="product-cards-hover-title"><a href="#">Pink app</a></h3>
-                                <p class="product-cards-hover-text">Продуктовый лендинг
-                                    <br> приложения для iOS и Android</p>
+                                <p class="product-cards-hover-text">Продуктовый лендинг <span class="br">приложения для iOS и Android</span></p>
                                 <a class="product-hover-btn button" href="#">9 900 руб.</a>
                             </section>
                         </li>
@@ -183,8 +179,7 @@
                             </section>
                             <section class="product-cards-hover">
                                 <h3 class="product-cards-hover-title"><a href="#">Barbershop</a></h3>
-                                <p class="product-cards-hover-text">Сайт салона красоты.
-                                    <br> Для мужчин, да.</p>
+                                <p class="product-cards-hover-text">Сайт салона красоты. <span class="br">Для мужчин, да.</span></p>
                                 <a class="product-hover-btn button" href="#">9 900 руб.</a>
                             </section>
                         </li>
@@ -195,8 +190,7 @@
                             </section>
                             <section class="product-cards-hover">
                                 <h3 class="product-cards-hover-title"><a href="#">Mishka</a></h3>
-                                <p class="product-cards-hover-text">Интернет-магазин
-                                    <br> вязаных игрушек</p>
+                                <p class="product-cards-hover-text">Интернет-магазин <span class="br">вязаных игрушек</span></p>
                                 <a class="product-hover-btn button" href="#">9 900 руб.</a>
                             </section>
                         </li>
@@ -207,8 +201,7 @@
                             </section>
                             <section class="product-cards-hover">
                                 <h3 class="product-cards-hover-title"><a href="#">A plus</a></h3>
-                                <p class="product-cards-hover-text">Лендинг курсов повышения
-                                    <br> квалификации</p>
+                                <p class="product-cards-hover-text">Лендинг курсов повышения <span class="br">квалификации</span></p>
                                 <a class="product-hover-btn button" href="#">9 900 руб.</a>
                             </section>
                         </li>
@@ -219,8 +212,7 @@
                             </section>
                             <section class="product-cards-hover">
                                 <h3 class="product-cards-hover-title"><a href="#">Кваст</a></h3>
-                                <p class="product-cards-hover-text">Промо-сайт производителя
-                                    <br> крафтового кваса</p>
+                                <p class="product-cards-hover-text">Промо-сайт производителя <span class="br">крафтового кваса</span></p>
                                 <a class="product-hover-btn button" href="#">9 900 руб.</a>
                             </section>
                         </li>
@@ -252,10 +244,9 @@
                 <div class="contacts-text-container container">
                     <section class="contacts-text">
                         <b>Nёrds design studio</b>
-                        <p>191186, Санкт-Петербург,
-                            <br> ул. Б. Конюшенная, д. 19/8</p>
+                        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                         <p>тел.: +7 (812) 275-75-75</p>
-                        <a class="contacts-button button" href="#">Напишите нам</a>
+                        <a class="contacts-button button" href="write-us.html">Напишите нам</a>
                     </section>
                 </div>
 
@@ -297,17 +288,14 @@
         <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
             <div>
                 <label for="name">Ваше имя:</label>
-                <br>
                 <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
             </div>
             <div>
                 <label for="email">Ваш e-mail:</label>
-                <br>
                 <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
             </div>
             <p>
                 <label for="text">Текст письма:</label>
-                <br>
                 <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
             </p>
             <button class="modal-feedback-button button" type="submit">Отправить</button>
@@ -316,5 +304,5 @@
         </button>
     </section>
 </body>
-
 </html>
+br
